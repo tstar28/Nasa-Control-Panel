@@ -7,9 +7,7 @@ const launchesrouter = require('./routes/launches/launches.router');
 const app = express();
 const api = require('./routes/api')
 
-app.use(cors({
-  origin: 'http://localhost:3000',
-}));
+app.use(cors());
 app.use(morgan('combined'));
 
 app.use(express.json());
